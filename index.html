@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Crypto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              sm: "640px",
+              md: "768px",
+              lg: "1024px",
+              xl: "1280px",
+            },
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-[url('./assets/bg.png')] h-screen bg-center bg-no-repeat bg-cover"
+  >
+    <div class="flex flex-col h-screen w-screen">
+      <!-- Navbar  -->
+      <section aria-label="navbar">
+        <nav
+          class="flex w-screen bg-black justify-between px-24 text-white h-24"
+        >
+          <!-- Logo  -->
+          <div class="mt-5 basis-48">
+            <img src="./assets/white-logo.png" alt="logo" class="logo w-32" />
+          </div>
+          <!-- White Line -->
+          <div class="w-0.5 bg-white h-16 mt-4"></div>
+
+          <!-- List Items  -->
+          <div
+            class="hidden sm:block w-64 grow mx-52 mt-8 font-['Montserrat'] ml-20"
+          >
+            <ul class="list flex flex-row gap-x-20">
+              <li class="list-item cursor-pointer">
+                <select
+                  name="Apps"
+                  class="cursor-pointer bg-inherit font-['Montserrat']"
+                >
+                  <option value="">Apps</option>
+                </select>
+              </li>
+              <li class="list-item cursor-pointer">DAO</li>
+              <li class="list-item cursor-pointer">Technology</li>
+              <li class="list-item cursor-pointer">Token</li>
+              <li class="list-item cursor-pointer">Contributors</li>
+            </ul>
+          </div>
+          <div>
+            <!-- Button  -->
+            <button
+              class="bg-fuchsia-600 px-6 py-1 rounded mt-7 font-['Poppins'] font-normal"
+            >
+              Buy 1 Token
+            </button>
+          </div>
+        </nav>
+      </section>
+      <!-- Hero Section -->
+      <section aria-label="hero">
+        <div
+          class="hero flex flex-col space-y-5 text-white text-center mt-28 font-['Montserrat']"
+        >
+          <h1 class="hero-heading px-64 text-center font-semibold text-8xl">
+            Lets build a better tomorrow, together.
+          </h1>
+          <p
+            class="hero-description font-['Montserrat'] text-center text-xl font-thin"
+          >
+            Buy 1 Token. Join the DAO. Change the world
+          </p>
+          <div>
+            <button
+              class="bg-fuchsia-600 px-4 py-2 rounded mt-5 font-['Poppins'] font-medium"
+            >
+              Request Early Access
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
